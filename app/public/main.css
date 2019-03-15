@@ -1,7 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: #AFCBFF;
+}
+
+body{
+    background-color: #FFEDE1
 }
 
 header {
@@ -30,7 +33,7 @@ main {
     background-color: #e9ecef;
     border-radius: .3rem;
     text-align: center;
-    background-color: #FFEDE1;
+    background-color: #F9FBF2;
 
 }
 
