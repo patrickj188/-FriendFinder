@@ -3,7 +3,7 @@ const express = require('express')
 
 let app = express();
 
-let PORT = 3000;
+let PORT = 3003;
 
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
@@ -43,6 +43,6 @@ app.get('/survey', (req,res) =>{
 })
 
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server listening on ${PORT}`)
 });
