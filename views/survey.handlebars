@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="jumbotron">
+    <h1 class="display-3">Survey</h1>
+    <p class="lead">Jumbo helper text</p>
+    <div id="container">
+
+        {{#each questions}}
+        <div class="card">
+            <h5 class="card-header">Question {{addOne @index}} </h5>
+            <div class="card-body">
+                <p class="card-text">{{this}}</p>
+                <select data-placeholder="" class="form-control form-control-sm question" id="q{{addOne @index}}">
+                    <option>Choose an option</option>
+                    <option value="1">1(Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <!-- Button trigger modal -->
+   <button type="button" class="btn btn-primary" data-toggle="modal"
+        onclick="submitSurvey()">Submit</button>
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+
+</script>

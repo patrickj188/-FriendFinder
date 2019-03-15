@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./main.css" rel="stylesheet">
+    <title>Handlebars App!</title>
+
+</head>
+<body>
+    {{> header}}
+    <main>
+    {{{body}}}
+    </main>
+
+<div class="modal" id="myModal" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Meet Your New Friend</h5>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+    {{> footer}}
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
