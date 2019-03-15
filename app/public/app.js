@@ -19,14 +19,14 @@ let submitSurvey = () => {
     const unanswered = answers.find(a => isNaN(parseInt(a)))
     if (unanswered) {
     }
-    
+
 
     $.ajax(settings).done(function (response) {
         let friendData = response;
         $('#myModal').find('.modal-body').append(`<p>${friendData.name}</p>`)
         $('#myModal').find('.modal-body').append(`<img src="${friendData.profilePic}">`)
         $('#myModal').modal('toggle')
-        
+
 
 
         console.log(response);

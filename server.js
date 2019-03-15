@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
     res.render(`home`, {
     })
 })
-app.get('/survey', (req,res) =>{
+app.get('/survey', (req, res) => {
     res.render(`survey`, {
         questions() {
             return [
@@ -36,8 +36,8 @@ app.get('/survey', (req,res) =>{
             ]
         },
         helpers: {
-            addOne(num){
-                return parseInt(num) + 1; 
+            addOne(num) {
+                return parseInt(num) + 1;
             }
         }
     })
