@@ -1,5 +1,6 @@
 const exphbs = require("express-handlebars");
 const express = require('express')
+var cors = require('cors')
 
 let app = express();
 
@@ -10,6 +11,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 app.use(express.static('app/public'))
 app.use(express.json());
+app.use(cors())
 
 require("./app/routing/apiRoutes.js")(app);
 // require("./app/routing/htmlRouting.js")(app);
