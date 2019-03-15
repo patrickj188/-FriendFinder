@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    background-color: #AFCBFF;
 }
 
 header {
@@ -21,4 +22,21 @@ main {
 
 .modal-body img {
     max-width: 100%;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+    text-align: center;
+    background-color: #FFEDE1;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #11316d;
+
+
 }

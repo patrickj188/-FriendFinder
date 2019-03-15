@@ -14,7 +14,6 @@ app.use(express.json());
 app.use(cors())
 
 require("./app/routing/apiRoutes.js")(app);
-// require("./app/routing/htmlRouting.js")(app);
 
 app.get('/', (req, res) => {
     res.render(`home`, {

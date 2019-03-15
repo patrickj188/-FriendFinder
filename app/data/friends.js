@@ -45,6 +45,38 @@ let friendList = [{
         1,
         1
     ] 
+},
+{
+    name: 'Dwayne Johnson',
+    profilePic: 'https://i.kym-cdn.com/photos/images/original/000/970/542/3cd.jpg',
+    scores: [
+        5,
+        5,
+        1,
+        3,
+        1,
+        3,
+        2,
+        5,
+        4,
+        5
+    ] 
+},
+{
+    name: 'Cthulhu',
+    profilePic: 'https://vignette.wikia.nocookie.net/vsbattles/images/9/94/Cthulhu_by_disse86-d9tq84i.jpg/revision/latest?cb=20161030021815',
+    scores: [
+        2,
+        3,
+        1,
+        1,
+        4,
+        1,
+        2,
+        5,
+        4,
+        5
+    ] 
 }
 ]
 

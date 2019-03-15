@@ -18,7 +18,6 @@ let submitSurvey = () => {
 
     const unanswered = answers.find(a => isNaN(parseInt(a)))
     if (unanswered) {
-        // return console.log('finish this bitch');
     }
     
 
@@ -34,6 +33,7 @@ let submitSurvey = () => {
     })
 
 }
+
 
 
 
