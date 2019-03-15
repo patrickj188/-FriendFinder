@@ -1,10 +1,11 @@
 let submitSurvey = () => {
     const questions = document.getElementsByClassName('question')
     const answers = Array.from(questions).map(q => q.value)
+    const url = window.location.origin + '/api/friends'
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "http://localhost:3000/api/friends",
+        "url": url,
         "method": "POST",
         "headers": {
             "Content-Type": "application/json",
@@ -17,7 +18,7 @@ let submitSurvey = () => {
 
     const unanswered = answers.find(a => isNaN(parseInt(a)))
     if (unanswered) {
-        return console.log('finish this bitch');
+        // return console.log('finish this bitch');
     }
     
 
